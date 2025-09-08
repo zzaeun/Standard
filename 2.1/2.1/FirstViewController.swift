@@ -57,7 +57,7 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     
     // tableView가 cell을 눌렸을 때 무슨 행동을 해야하는지도 ViewController에게 맡김
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        datas.append("셀 누름")
+        datas.append("셀 선택")
         tableView.reloadData()
     }
 }
