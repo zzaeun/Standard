@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  SceneDelegate.swift
 //  3.2
 //
-//  Created by 이정은 on 9/15/25.
+//  Created by 이정은 on 9/12/25.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // UIWindow 객체 생성.
         guard let windowScene = (scene as? UIWindowScene) else { return }
                 let window = UIWindow(windowScene: windowScene)
-                
                 // window 에게 루트 뷰 지정
                 window.rootViewController = PasswordViewController()
                 

@@ -40,7 +40,7 @@ class PasswordView: UIView {
     func setConstraints() {
         // passwordLabel 정가운데 정렬
         passwordLabel.snp.makeConstraints {
-            $0.centerX.centerY.equalToSuperview()
+            $0.center.equalToSuperview()
         }
         
         passwordTextField.snp.makeConstraints {

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  3.1
-//
 //  Created by 이정은 on 9/9/25.
+//  3.2
+//
 //
 
 import UIKit

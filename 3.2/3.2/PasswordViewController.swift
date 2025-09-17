@@ -24,14 +24,6 @@ class PasswordViewController: UIViewController {
     }
     
     @objc
-//    func tappedbutton() {
-//        if passwordView.passwordTextField.text == "password" {
-//            passwordView.passwordLabel.text = "성공"
-//        } else {
-//            passwordView.passwordLabel.text = "실패"
-//        }
-//    }
-    
     func tappedButton() {
         
         guard let input = passwordView.passwordTextField.text else { return }
@@ -44,7 +36,7 @@ class PasswordViewController: UIViewController {
         }
     }
     
-    // error 메시지를 작성해놧ㄴ으니까 파라미터를 받기 위해 with~ 작성
+    // error 메시지를 작성해놨으니까 파라미터를 받기 위해 with~ 작성
     func presentAlert(with error: PasswordError) {
         let alert = UIAlertController(title: "에러 발생", message: error.message, preferredStyle: .alert)
         alert.addAction(.init(title: "확인", style: .default))
@@ -52,4 +44,3 @@ class PasswordViewController: UIViewController {
     }
 
 }
-
