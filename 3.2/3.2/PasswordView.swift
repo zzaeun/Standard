@@ -9,8 +9,6 @@ import UIKit
 import SnapKit
 
 class PasswordView: UIView {
-
-    let validator = PasswordValidator()
     
     let passwordLabel = UILabel()
     let passwordTextField = UITextField()
@@ -58,20 +56,5 @@ class PasswordView: UIView {
             $0.top.equalTo(passwordLabel.snp.bottom).offset(10)
         }
     }
-    
-    
-    
-//    do {
-//        let input = passwordTextField.text ?? ""
-//        let inputValid = try validator.validate(with: input)
-//    }
-//    
-//    func errorAlert {
-//        let alert = UIAlertController (
-//            title: "hi",
-//            message: "umm",
-//            preferredStyle: .alert
-//        )
-//    }
     
 }
