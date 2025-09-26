@@ -45,10 +45,8 @@ class ViewController: UIViewController {
             
             do {
                 let model = try JSONDecoder().decode(userPageModel.self, from: data)
-                print("디코딩 성공")
                 print(model.data)
             } catch {
-                print("디코딩 실패")
                 print(error)
             }
         }
