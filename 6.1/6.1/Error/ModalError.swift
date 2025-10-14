@@ -10,7 +10,6 @@ import Foundation
 // 에러 예외처리 상황
 enum ModalError: Error {
     case emailEmpty
-    case invalidEmail
     case passwordEmpty
     case invalidURL
     case invalidRequest
@@ -23,8 +22,6 @@ enum ModalError: Error {
         switch self {
         case .emailEmpty:
             return "이메일을 입력해주세요."
-        case .invalidEmail:
-            return "잘못된 이메일입니다."
         case .passwordEmpty:
             return "비밀번호를 입력해주세요."
         case .invalidURL:

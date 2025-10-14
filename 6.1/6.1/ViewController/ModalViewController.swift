@@ -28,7 +28,7 @@ class ModalViewController: UIViewController {
     private func configureUI() {
         modalLabel.text = "Modal ViewController"
         modalButton.setTitle("Modal Button", for: .normal)
-        modalButton.addTarget(self, action: #selector(didmissModelViewController), for: .touchUpInside)
+        modalButton.addTarget(self, action: #selector(dismissModelViewController), for: .touchUpInside)
         
         emailTextField.borderStyle = .roundedRect
         passwordTextField.borderStyle = .roundedRect
@@ -62,7 +62,7 @@ class ModalViewController: UIViewController {
 
     }
     
-    @objc func didmissModelViewController() {
+    @objc func dismissModelViewController() {
         // 텍스트필드 사용이 끝나면 키보드를 화면에서 사라지게
         passwordTextField.resignFirstResponder()
         
